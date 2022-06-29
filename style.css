@@ -7,11 +7,12 @@ body {
     font-family: "Lato", sans-serif ;
 }
 .section{
-    border: 20px solid #c8ebef;
+    border: 20px solid #8d1b83;
 }
 span{
     display: flex;
     justify-content: center;
+    color: #8d1b83;
 
 }
 h2{
