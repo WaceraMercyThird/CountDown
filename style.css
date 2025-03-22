@@ -1,42 +1,128 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
-    font-family: "Lato", sans-serif ;
+    font-family: "Lato", sans-serif;
+    text-align: center;
+    background-color: #f8f8f8;
 }
-.section{
+
+.section {
     border: 20px solid #8d1b83;
+    padding: 1rem;
 }
-span{
+
+span {
     display: flex;
     justify-content: center;
     color: #8d1b83;
-
+    padding: 1rem;
 }
-h2{
-    font-size: 3rem;
+
+h2 {
+    font-size: 2.5rem;
     font-weight: bold;
-    padding: 3rem;
-
-}
-.coming-soon{
-    min-height: 94vh;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-}
-.countdown{
-    display: flex;
-    justify-content: space-around;
+    padding: 2rem;
     text-align: center;
+}
 
+.coming-soon {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
 }
-.day,.hour,.minute,.second {
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+}
+
+.container-day,
+.container-hour,
+.container-minute,
+.container-second {
+    background: #8d1b83;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    min-width: 100px;
+}
+
+.day,
+.hour,
+.minute,
+.second {
     font-size: 2rem;
+    font-weight: bold;
 }
-.waiting{
-    height: 46vh;
+
+.waiting {
+    max-width: 100%;
+    height: auto;
+    margin-top: 2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 2rem;
+        padding: 1.5rem;
+    }
+
+    .countdown {
+        gap: 1rem;
+    }
+
+    .container-day,
+    .container-hour,
+    .container-minute,
+    .container-second {
+        min-width: 80px;
+        padding: 0.8rem;
+    }
+
+    .day,
+    .hour,
+    .minute,
+    .second {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 1.8rem;
+        padding: 1rem;
+    }
+
+    .countdown {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .container-day,
+    .container-hour,
+    .container-minute,
+    .container-second {
+        width: 80px;
+        padding: 0.6rem;
+    }
+
+    .day,
+    .hour,
+    .minute,
+    .second {
+        font-size: 1.2rem;
+    }
 }
